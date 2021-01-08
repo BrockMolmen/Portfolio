@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap');
 
+// color theme
+$black: #303030;
+$red: #CF3A69;
+$orange: #FF9B61;
+$yellow: #EDCD7E;
+$green: #56827F;
+
+
 
 header {
-  background-color: #303030;
+  background-color: $black;
   text-align: left;
   padding: 20px 10px;
   display: flex;
@@ -18,11 +26,11 @@ header {
   height:20px;
 
   a {
-    color: #FF9B61;
+    color: $orange;
     transition: color 0.3s ease;
 
     &:hover {
-      color: darken(#FF9B61, 20%)
+      color: darken($orange, 15%)
     }
   }
 
