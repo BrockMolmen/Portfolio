@@ -3,11 +3,28 @@
 
 body {
   background-color: #EDCD7E;
-  font-family: 'Raleway', sans-serif;
 }
 
 .App {
+  background-color: #EDCD7E;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+
+.about-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  li {
+    padding: 10px;
+  }
+}
+
+.hello {
+  padding-top: 8vh;
+}
+.bio {
+  max-width: 600px;
 }
 
 .Footer {
@@ -16,8 +33,22 @@ body {
   left: 0;
   text-align: center;
   width: 100vw;
-  height: 15px;
-  background-color: #303030;
-  color: #EDCD7E;
-  font-size: 10px;
+  // background-color: #303030;
+  color: #56827F;
+  
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+  list-style: none;
+    li{
+      padding-left:5px;
+      padding-top: 2px;
+      &:hover {
+        color: darken(#56827f, 20%)
+      }
+
+    }
+  }
 }

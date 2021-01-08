@@ -17,12 +17,12 @@ header {
 }
 
 header a {
-  color: #EDCD7E;
+  color: #FF9B61;
   transition: color 0.3s ease;
 }
 
 header a:hover {
-  color: #e1aa24;
+  color: #fa5c00;
 }
 
 header ul {

@@ -2,11 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap");
 body {
   background-color: #EDCD7E;
-  font-family: 'Raleway', sans-serif;
 }
 
 .App {
+  background-color: #EDCD7E;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
+}
+
+.about-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.about-links li {
+  padding: 10px;
+}
+
+.hello {
+  padding-top: 8vh;
+}
+
+.bio {
+  max-width: 600px;
 }
 
 .Footer {
@@ -15,9 +34,23 @@ body {
   left: 0;
   text-align: center;
   width: 100vw;
-  height: 15px;
-  background-color: #303030;
-  color: #EDCD7E;
-  font-size: 10px;
+  color: #56827F;
+}
+
+.Footer ul {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7px;
+  list-style: none;
+}
+
+.Footer ul li {
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.Footer ul li:hover {
+  color: #2d4543;
 }
 /*# sourceMappingURL=main.css.map */
