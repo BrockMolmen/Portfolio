@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap");
+header {
+  background-color: #303030;
+  text-align: left;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Megrim', sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 20px;
+}
+
+header a {
+  color: #EDCD7E;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #e1aa24;
+}
+
+header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: 0px 10px;
+}
+/*# sourceMappingURL=Header.css.map */
