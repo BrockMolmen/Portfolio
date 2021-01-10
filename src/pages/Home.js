@@ -2,8 +2,8 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      <h1>HOME</h1>
+    <div className="bump">
+      <img src="logo-name.svg" alt="logo" className="main-logo" />
     </div>
   )
 }

@@ -1,35 +1,159 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap");
 body {
-  background-color: #EDCD7E;
+  background-color: #e4d9c0;
+  color: #303030;
 }
 
 .App {
-  background-color: #EDCD7E;
+  background-color: #e4d9c0;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
 .about-links {
+  margin-left: -5%;
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .about-links li {
-  margin: 5px;
+  margin: 10px 5px -10px 5px;
+}
+
+.bump {
+  display: flex;
+  margin-bottom: 0px;
+  padding-top: 8vh;
+  justify-content: center;
+}
+
+.main-logo {
+  height: 80vh;
+}
+
+@media screen and (max-width: 900px) {
+  .main-logo {
+    max-width: 90vw;
+  }
 }
 
 .hello {
-  font-size: 50px;
-  margin-bottom: 0px;
-  padding-top: 8vh;
-  color: #56827F;
+  font-size: 7em;
+  margin: 0;
+  padding-left: 9%;
+  margin-bottom: -18px;
+  color: #EDCD7E;
+  z-index: 2;
+  position: absolute;
+}
+
+.bio-pic {
+  position: relative;
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 .bio {
   max-width: 60vw;
   margin: auto;
+}
+
+.project-container {
+  display: flex;
+  background-color: #EDCD7E;
+  max-width: 55vw;
+  padding: 10px;
+  filter: drop-shadow(0px 5px 3px rgba(83, 83, 83, 0.6));
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.card-one {
+  background-color: #FF9B61;
+}
+
+.card-one .proj-title {
+  color: #56827F;
+}
+
+.card-one .icon {
+  color: #EDCD7E;
+  transition: color 0.3s ease;
+}
+
+.card-one .icon:hover {
+  color: #eac468;
+}
+
+.card-two {
+  background-color: #56827F;
+}
+
+.card-two .proj-title {
+  color: #EDCD7E;
+}
+
+.card-two .icon {
+  color: #FF9B61;
+  transition: color 0.3s ease;
+}
+
+.card-two .icon:hover {
+  color: #ff7b2e;
+}
+
+.card-three {
+  background-color: #EDCD7E;
+}
+
+.card-three .proj-title {
+  color: #CF3A69;
+}
+
+.card-three .icon {
+  color: #56827F;
+  transition: color 0.3s ease;
+}
+
+.card-three .icon:hover {
+  color: #426361;
+}
+
+.proj-title {
+  font-size: 3em;
+  margin: 0 0 5px 0;
+}
+
+.proj-screenshot {
+  max-width: 400px;
+  box-shadow: 0px 3px 8px #303030;
+}
+
+.proj-right {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+
+.proj-deck {
+  padding-top: 4vh;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.proj-gitbox {
+  text-align: center;
+}
+
+.proj-gitbox a {
+  margin: -1em 1em;
+}
+
+.proj-tech {
+  font-weight: bolder;
+  font-size: .75em;
 }
 
 .Footer {
@@ -45,33 +169,48 @@ body {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  padding-right: 7px;
+  padding-right: 2vw;
   list-style: none;
 }
 
 .Footer ul li {
   padding-left: 5px;
   padding-top: 2px;
-  transition: color 0.3s ease;
-}
-
-.Footer ul li:hover {
-  color: #426361;
 }
 
 .icon-1 {
   color: #56827F;
+  transition: color 0.3s ease;
+}
+
+.icon-1:hover {
+  color: #426361;
 }
 
 .icon-2 {
   color: #CF3A69;
+  transition: color 0.3s ease;
+}
+
+.icon-2:hover {
+  color: #982549;
 }
 
 .icon-3 {
   color: #FF9B61;
+  transition: color 0.3s ease;
+}
+
+.icon-3:hover {
+  color: #ff7b2e;
 }
 
 .icon-4 {
-  color: #303030;
+  color: #535353;
+  transition: color 0.3s ease;
+}
+
+.icon-4:hover {
+  color: #202020;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap');
 
 // color theme
+$ltYellow:#e4d9c0;
 $black: #303030;
+$ltBlack: #535353;
 $red: #CF3A69;
 $orange: #FF9B61;
 $yellow: #EDCD7E;
@@ -10,35 +12,152 @@ $green: #56827F;
 
 
 body {
-  background-color: #EDCD7E;
+  background-color: $ltYellow;
+  color: $black
 }
 
 .App {
-  background-color: #EDCD7E;
+  background-color: $ltYellow;
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
 
 .about-links {
+  margin-left: -5%;
   display: flex;
   list-style: none;
-  justify-content: center;
+  justify-content: flex-start;
   li {
-    margin: 5px;
+    margin:10px 5px -10px 5px ;
+
+  }
+}
+
+.bump {
+  display: flex;
+  margin-bottom: 0px;
+  padding-top: 8vh;
+  justify-content: center;
+}
+
+
+.main-logo {
+  height: 80vh;
+
+  @media screen and (max-width: 900px) {
+    max-width: 90vw;
   }
 }
 
 .hello {
-  font-size: 50px;
-  margin-bottom: 0px;
-  padding-top: 8vh;
-  color: #56827F;
+  font-size: 7em;
+  margin: 0;
+  padding-left: 9%;
+  margin-bottom: -18px;
+  // padding-top: 8vh;
+  color: $yellow;
+  z-index: 2;
+  position: absolute;
 }
+
+.bio-pic {
+  position: relative;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
 .bio {
   max-width: 60vw;
   margin: auto
 }
+.project-container {
+  display: flex;
+  background-color: $yellow;
+  max-width: 55vw;
+  padding: 10px;
+  filter: drop-shadow( 0px 5px 3px rgba(83, 83, 83, .6)) ;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.card-one {
+  background-color: $orange;
+  .proj-title{
+    color: $green;
+  }
+  .icon {
+    color: $yellow;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: darken($yellow, 5%)
+    }
+  }
+}
+.card-two {
+  background-color: $green;
+  .proj-title{
+    color: $yellow;
+  }
+  .icon {
+    color: $orange;
+    transition: color 0.3s ease;
+    &:hover {
+      color: darken($orange, 10%)
+    }
+  }
+}
+
+.card-three {
+  background-color: $yellow;
+  .proj-title{
+    color: $red;
+  }
+  .icon {
+    color: $green;
+    transition: color 0.3s ease;
+    &:hover {
+      color: darken($green, 10%)
+    }
+  }
+}
+
+
+.proj-title {
+  font-size: 3em;
+  margin: 0 0 5px 0;
+}
+
+.proj-screenshot {
+  max-width: 400px;
+  box-shadow: 0px 3px 8px $black;
+}
+
+.proj-right {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+
+.proj-deck {
+  padding-top: 4vh;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.proj-gitbox{
+  text-align: center;
+  a {
+    margin: -1em 1em;
+  }
+}
+
+.proj-tech {
+  font-weight: bolder;
+  font-size: .75em;
+}
+
 
 .Footer {
   position: fixed;
@@ -53,27 +172,44 @@ body {
     margin: 0;
     display: flex;
     justify-content: flex-end;
-    padding-right: 7px;
+    padding-right: 2vw;
   list-style: none;
     li{
       padding-left:5px;
       padding-top: 2px;
-      transition: color 0.3s ease;
-      &:hover {
-        color: darken(#56827f, 10%)
       }
-    }
   }
 }
+
 .icon-1 {
   color: $green;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($green, 10%)
+  }
 }
 .icon-2 {
   color: $red;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($red, 15%)
+  } 
 }
 .icon-3 {
   color: $orange;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($orange, 10%)
+  }
 }
 .icon-4 {
-  color: $black;
+  color: $ltBlack;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($ltBlack, 20%)
+  }
 }

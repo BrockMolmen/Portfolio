@@ -6,10 +6,11 @@ const Header = (props) => {
   return (
     <header>
       <div className="nav-links">
-        <ul>
-          <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/about'}>About</Link></li>
-          <li><Link to={'/projects'}>Projects</Link></li>
+        <ul className="nav-list">
+          {/* <li><Link className="link-link" to={'/'}>Home</Link></li> */}
+          <li><Link className="link-link" to={'/about'}>About</Link></li>
+          <li><Link className="link-link" to={'/'}><img id="header-logo" src="logo.svg" alt="TriLogo"/></Link></li>
+          <li><Link className="link-link" to={'/projects'}>Projects</Link></li>
         </ul>
       </div>
     </header>
