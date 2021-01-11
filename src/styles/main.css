@@ -65,6 +65,10 @@ body {
   margin: auto;
 }
 
+.email {
+  justify-content: flex-end;
+}
+
 .project-container {
   display: flex;
   background-color: #EDCD7E;

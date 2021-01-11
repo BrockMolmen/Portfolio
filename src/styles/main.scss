@@ -80,6 +80,10 @@ justify-content: space-around;
   max-width: 60vw;
   margin: auto
 }
+
+.email {
+  justify-content: flex-end;
+}
 .project-container {
   display: flex;
   background-color: $yellow;
