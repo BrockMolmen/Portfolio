@@ -1,7 +1,10 @@
 {
-  "name": "gamelib-client",
+  "name": "brock-molmen-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.11.1"
+    },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
