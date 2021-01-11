@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const Projects = () => {
   return (
     <div className="bump">
-      <div className="center-it">
+      <div className="stack-it">
         <div className="project-container card-one">
           <div className="proj-left">
             <h1 className='proj-title'>Super Set</h1>
@@ -16,7 +16,7 @@ const Projects = () => {
           <div className="proj-right">
             <p className="proj-deck">The new home of your Super Nintendo collection! This site allows users to search for their favorite game titles. Once a user is registered, they can save games to their “Super Set”. Hoping to hit a few nostalgic strings, the overall theme and layout are pull directly from the Super Nintendo console.</p>
             <div className="proj-gitbox">
-            <a href="https://github.com/BrockMolmen" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
+            <a href="https://github.com/BrockMolmen/super-set-frontend" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
             </div>
             
             <p className="proj-tech">React, Express, Node.js, PostgreSQL, Sass</p>
@@ -32,7 +32,7 @@ const Projects = () => {
           <div className="proj-right">
             <p className="proj-deck">A site dedicated to the health benefits of drinking tea. Users can browse by their desired benefit and view all teas associated. Members of the site are able save benefits to their profiles and discover new teas this way. </p>
             <div className="proj-gitbox">
-            <a href="https://github.com/BrockMolmen" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
+            <a href="https://github.com/laurennguyen395/soulsipn-pern-auth-frontend" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
             </div>
             <p className="proj-tech">React, Express, Node.js, PostgreSQL, Sass, React-Bootstrap, React-Spring</p>
           </div>
@@ -48,8 +48,8 @@ const Projects = () => {
           <div className="proj-right">
             <p className="proj-deck">Currently undergoing rebranding and redesign, Blanched Almond is a fun and interactive way to sharpen a unique css skill, the 147 colors you can call by name. Levels are grouped by color family and increase in both number of colors and difficulty. Each level’s colors are loaded randomly for extra fun! </p>
             <div className="proj-gitbox">
-            <a href="https://github.com/BrockMolmen" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
-            <a href="https://github.com/BrockMolmen" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faDesktop} size="3x" className="icon" /></a>
+            <a href="https://github.com/BrockMolmen/CSS-Color-Match" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faGithub} size="3x" className="icon" /></a>
+            <a href="https://brockmolmen.github.io/CSS-Color-Match/" target="_blank" alt="GitHub" title="GitHub"><FontAwesomeIcon icon={faDesktop} size="3x" className="icon" /></a>
             </div>
             
             <p className="proj-tech">Javascript, HTML, CSS</p>

@@ -23,16 +23,7 @@ body {
 }
 
 
-.about-links {
-  margin-left: -5%;
-  display: flex;
-  list-style: none;
-  justify-content: flex-start;
-  li {
-    margin:10px 5px -10px 5px ;
 
-  }
-}
 
 .bump {
   display: flex;
@@ -41,30 +32,48 @@ body {
   justify-content: center;
 }
 
+.center-it {
+display: flex;
+justify-content: space-around;
+}
+
+.stack-it {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .main-logo {
   height: 80vh;
+  float: top;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     max-width: 90vw;
   }
 }
 
 .hello {
-  font-size: 7em;
+  font-size: 9vw;
   margin: 0;
-  padding-left: 9%;
+  // padding-left: .5em;
   margin-bottom: -18px;
-  // padding-top: 8vh;
   color: $yellow;
   z-index: 2;
   position: absolute;
+  @media screen and (max-width: 1000px) {
+    font-size: 17vw;
+  }
 }
 
 .bio-pic {
   position: relative;
-  max-width: 400px;
+  // width: 100%;
+  width: 100%;
   border-radius: 10px;
+  // @media screen and (max-width: 1000px){
+  //   max-width: 500px;
+  // }
+
 }
 
 .bio {
@@ -75,10 +84,16 @@ body {
   display: flex;
   background-color: $yellow;
   max-width: 55vw;
-  padding: 10px;
+  min-width: 900px;
+  padding: 1em;
   filter: drop-shadow( 0px 5px 3px rgba(83, 83, 83, .6)) ;
-  margin: 5px;
+  margin-bottom: 2em;
   border-radius: 10px;
+  @media screen and (max-width: 1000px){
+    flex-direction: column;
+    max-width:75vw;
+    min-width: 65vw;
+  }
 }
 
 .card-one {
@@ -97,6 +112,7 @@ body {
 }
 .card-two {
   background-color: $green;
+  color: $ltYellow;
   .proj-title{
     color: $yellow;
   }
@@ -132,6 +148,9 @@ body {
 .proj-screenshot {
   max-width: 400px;
   box-shadow: 0px 3px 8px $black;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .proj-right {
@@ -158,6 +177,19 @@ body {
   font-size: .75em;
 }
 
+.about-links {
+  display: flex;
+  list-style: none;
+  font-size: 2.5vw;
+  li {
+    margin:-.7vw .7vw -7vw .7vw ;
+  }
+  @media screen and (max-width: 1000px){
+    font-size: 9vw;
+    margin-left: -9vw;
+  }
+
+}
 
 .Footer {
   position: fixed;
@@ -165,7 +197,6 @@ body {
   left: 0;
   text-align: center;
   width: 100vw;
-  // background-color: #303030;
   color: #56827F;
   
   ul {

@@ -23,7 +23,8 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  height:6vh;
+  
+  height: 7vh;
   z-index: 1;
   filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.6));
 
@@ -35,8 +36,12 @@ header {
       color: darken($orange, 15%)
     }
   }
-
-
+  @media screen and (max-height: 750px){
+  height: 9vh;
+  font-size: 5vh;
+  }
+  
+  
 
   ul {
     display: flex;
@@ -62,4 +67,7 @@ header {
     background-color: $black;
     opacity: 0.7;
     }
+  @media screen and (max-height: 750px){
+    height: 7vh;
+    } 
   }
